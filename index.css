@@ -1,0 +1,52 @@
+*{
+    padding: 0 0;
+    margin: 0 0;
+    box-sizing: border-box;
+}
+
+.ex1, .ex2{
+    box-shadow: 2px 5px #ddd;
+    width: 70%;
+    margin: 50px auto;
+    border: 1px solid rgb(228, 228, 228);
+    background-color: rgb(228, 228, 228);
+} 
+
+h2{
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ex1-headers{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.inputs{
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+}
+
+button{
+    margin: auto;
+    display: block;
+}
+
+input, select {
+    text-align: center;
+}
+
+.results{
+    text-align: center;
+    margin: 30px;
+}
+
+.results h3{
+    font-size: 30px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <section class="ex1">
+        <header><h1>Qualification checker</h1></header>
+<div class="qualified-standards input-containers">
+<div class="QS-header ex1-headers"><h2>Please type in the score that the students need to acquire to be qualified</h2></div>
+    <div class="Math"><h2>Mathematic</h2>
+    <input type="number" id="ex1-math-QS" class="ex1-math-QS inputs">
+    </div>
+    <div class="Lit"><h2>Literature</h2>
+        <input type="number" id="ex1-lit-QS" class="ex1-lit-QS inputs">
+        </div>
+        <div class="English"><h2>Deutsch</h2>
+            <input type="number" id="ex1-eng-QS" class="ex1-eng-QS inputs">
+            </div>
+</div>
+<div class="actual-scores">
+    <div class="AS-header ex1-headers"><h2>Please type in the score of the student</h2></div>
+<div class="Math"><h2>Mathematic</h2>
+<input type="number" id="ex1-math-AS" class="ex1-math-AS inputs"></div>
+</div>
+<div class="Lit"><h2>Literature</h2>
+    <input type="number" id="ex1-lit-AS" class="ex1-lit-AS inputs">
+    </div>
+    <div class="English"><h2>Deutsch</h2>
+        <input type="number" id="ex1-eng-AS" class="ex1-eng-AS inputs">
+        </div>
+
+        <div class="area">
+            <div class="area-header ex1-headers"><h2>Which area the student come from?</h2></div>
+            <select name="area-selector" class="inputs" id="area-selector">
+                <option value="" selected disabled hidden>Choose one</option>
+                <option value="2">Area A</option>
+                <option value="1">Area B</option>
+                <option value="0.5">Area C</option>
+                <option value="0">X (None of above)</option>
+            </select>
+        </div>
+
+        <div class="type">
+            <div class="type-header ex1-headers"><h2>which type of student?</h2></div>
+            <select name="type-selector" class="inputs" id="type-selector">
+                <option value="" selected disabled hidden>Choose one</option>
+                <option value="2.5">Type 1</option>
+                <option value="1.5">Type 2</option>
+                <option value="1">Type 3</option>
+                <option value="0">0 (None of above)</option>
+            </select>
+        </div>
+<button class="btn-ex1" onclick="ex1()">Check!</button>
+<div class="ex1-result results"><h3 id="ex1-result"></h3></div>
+    </section>
+
+    <section class="ex2">
+<header><h1>Electricity bill calculator</h1></header>
+        <div class="name-container">
+            <div class="name-header ex2-header"><h2>Please tell us your name</h2></div>
+    <input type="text" id="ex2-name" class="ex2-name inputs" placeholder="Kimi no na wa">
+</div>
+<div class="consumed-electricity">
+    <div class="consumed-electricity-header ex2-header"><h2>Please tell us how much electricity did you consume</h2></div>
+    <input class="inputs" type="number" placeholder="Please type your consumed electricity in Kw!" id="consumed-electricity">
+</div>
+
+<button class="btn-ex2" onclick="ex2()">Calculate</button>
+
+<div class="ex2-result results"><h3 id="ex2-result"></h3></div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
