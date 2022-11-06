@@ -28,9 +28,9 @@ function ex2() {
   var electricityConsumed =
     document.getElementById("consumed-electricity").value * 1;
   var electricityConsumedZero = 500 * 50;
-  var electricityConsumed50 = 650 * 50;
-  var electricityConsumed100 = 850 * 100;
-  var electricityConsumed150 = 1100 * 150;
+  var electricityConsumed50 = 650 * 50 +electricityConsumedZero;
+  var electricityConsumed100 = 850 * 100+electricityConsumed50;
+  var electricityConsumed150 = 1100 * 150+electricityConsumed100;
   var result = document.getElementById("ex2-result");
   if (electricityConsumed <= 50*1) {
     result.innerHTML = "Mr/Mrs." +name + " need to pay " + 500 * electricityConsumed;
